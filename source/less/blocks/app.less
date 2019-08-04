@@ -3,20 +3,19 @@
 }
 
 .app__slogan {
-  position: relative;
   display: block;
   min-height: 365px;
   padding-top: 23px;
   padding-bottom: 7px;
   padding-left: 20px;
   padding-right: 20px;
-  background-image: url("../../img/iphone-hand-mobile@1x.png");
-  background-position: bottom left;
-  background-repeat: no-repeat;
+  background-image: url("../../img/iphone-hand-mobile@1x.png"), url("../../img/bg-back-mobile@1x.jpg");
+  background-position: bottom left, 0 -66px;
+  background-repeat: no-repeat, no-repeat;
 }
 
 .app__download--wrap {
-  background: @gray;
+  background: @blue;
   padding-top: 27px;
 }
 
@@ -33,12 +32,41 @@
   font-weight: 700;
 }
 
+.market__list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-top: 31px;
+  padding-bottom: 24px;
+  padding-left: 57px;
+  padding-right: 57px;
+}
+
+.market__link {
+  display: flex;
+  width: 47px;
+  height: 56px;
+}
+
+.market__link--iPhone {
+  background: url("../../img/logo-apple.svg") no-repeat bottom;
+}
+
+.market__link--android {
+  background: url("../../img/logo-android.svg") no-repeat bottom;
+}
+
+.market__link--microsoft {
+  background: url("../../img/logo-microsoft.svg") no-repeat bottom;
+}
+
 .app__intro {
   font-size: 14px;
   line-height: 24px;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 30px;
-  padding-top: 111px;
   text-align: center;
 }
