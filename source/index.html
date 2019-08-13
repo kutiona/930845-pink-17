@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet" type="text/css">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -11,7 +12,11 @@
       <header class="page-header page-header--cross">
         <div class="header-wrapper header-wrapper--cross">
           <a class="page-header__logo">
-            <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Пинк">
+            <picture>
+              <source srcset="img/logo-pink-white-desktop.svg" media="(min-width: 1200px)">
+              <source srcset="img/logo-pink-white-tablet.svg" media="(min-width: 660px)">
+              <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Пинк">
+            </picture>
           </a>
           <button class="page-header__toggle page-header__toggle--cross" type="button"><span class="visually-hidden">Открыть меню</span></button>
         </div>
@@ -57,8 +62,8 @@
           <div class="advantages__wrapper">
             <h2 class="visually-hidden">Преимущества</h2>
             <div class="slogan-wrapper">
-              <p class="advantages__slogan slogan">Устали от серости мегаполиса?</p>
-              <p class="advantages__slogan slogan">Нам есть, что вам предложить!</p>
+              <p class="advantages__slogan slogan__wide">Устали от серости мегаполиса?</p>
+              <p class="advantages__slogan slogan__narrow">Нам есть, что вам предложить!</p>
             </div>
             <ul class="advantages__list">
               <li class="advantages__item">
