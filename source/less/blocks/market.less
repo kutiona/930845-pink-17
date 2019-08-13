@@ -1,23 +1,31 @@
 .market {
   color: @white;
+  display: flex;
+  flex-direction: column;
+  background-image: url("../img/iphone-hand-mobile@1x.png");
+  background-position: 0 110px;
+  background-repeat: no-repeat;
 }
 
 .market__slogan {
   color: @white;
-  display: block;
   min-height: 365px;
-  padding-top: 23px;
-  padding-bottom: 7px;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  padding-top: 29px;
   padding-left: 20px;
   padding-right: 20px;
-  background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
-  background-position: bottom left, 0 -66px;
-  background-repeat: no-repeat, no-repeat;
 }
 
 .market__wrap {
   background: @blue;
-  padding-top: 27px;
+  padding-top: 29px;
+  padding-bottom: 30px;
+}
+
+.market__button {
+  padding-top: 28px;
 }
 
 .market__list {
@@ -55,6 +63,67 @@
   line-height: 24px;
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 30px;
   text-align: center;
+  margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .market {
+    width: 640px;
+    background-image: url("../img/iphone-hand-tablet@1x.png");
+    background-position: -20px 72px;
+    padding-left: 20px;
+    padding-bottom: 55px;
+  }
+
+  .market__slogan {
+    min-height: 152px;
+    width: 300px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 87px;
+  }
+
+  .market__wrap {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    background: rgba(@blue, 0);
+  }
+
+  .market__list {
+    padding-top: 42px;
+    padding-bottom: 38px;
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+
+  .market__intro {
+    display: block;
+    font-size: 18px;
+    padding: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .market {
+    width: 1200px;
+    padding-left: 130px;
+    background-image: url("../img/iphone-hand-desktop@1x.png");
+    background-position: 145px 98px;
+    padding-bottom: 68px;
+  }
+
+  .market__slogan {
+    padding-top: 108px;
+  }
+
+  .market__wrap {
+    padding-top: 53px;
+  }
+
+  .market__list {
+    padding-top: 66px;
+    padding-bottom: 55px;
+  }
 }
