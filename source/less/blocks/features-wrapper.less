@@ -1,0 +1,21 @@
+.features-wrapper {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url("../img/bg-triangle-white.svg") no-repeat top right;
+}
+
+@media (min-width: @tablet-width) {
+  .features-wrapper {
+    width: 660px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .features-wrapper {
+    width: 1200px;
+  }
+}
