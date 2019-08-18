@@ -1,26 +1,32 @@
-.slogan {
+.slogan,
+.slogan__wide,
+.slogan__nerrow {
   display: flex;
   text-align: center;
+  justify-content: center;
   font-size: 24px;
   line-height: 28px;
+  font-weight: 300;
+}
+
+.slogan__wide {
+  padding-bottom: 31px;
 }
 
 @media (min-width: @tablet-width) {
   .slogan {
     width: 240px;
     font-size: 40px;
-    line-height: 50px;
+    line-height: 49px;
   }
 
   .slogan__wide {
     width: 660px;
     font-size: 40px;
     line-height: 50px;
-    display: flex;
-    align-items: center;
   }
 
-  .slogan__narrow {
+  .slogan__nerrow {
     width: 360px;
     font-size: 40px;
     line-height: 50px;
@@ -29,6 +35,18 @@
 
 @media (min-width: @desktop-width) {
   .slogan {
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .slogan__wide {
+    width: 820px;
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .slogan__nerrow {
+    width: 420px;
     font-size: 50px;
     line-height: 60px;
   }
