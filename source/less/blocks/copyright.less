@@ -14,7 +14,15 @@
 }
 
 .copyright {
-  display: block;
-  margin: 0;
+  width: 128px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .copyright {
+    width: 150px;
+    margin: 0;
+  }
 }
