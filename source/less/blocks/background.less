@@ -1,0 +1,20 @@
+.background {
+  min-height: 462px;
+  background: url("../img/bg-back-mobile@1x.jpg") top center / cover;
+}
+
+@media (min-width: @tablet-width) {
+  .background {
+    min-height: 729px;
+    background: url("../img/bg-back-tablet@1x.jpg") top center / cover;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .background {
+    min-height: 853px;
+    padding-left: 130px;
+    padding-right: 130px;
+    background: url("../img/bg-back-desktop@1x.jpg") top center / cover;
+  }
+}
