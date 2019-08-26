@@ -1,52 +1,44 @@
 .page-header {
-  background: rgba(#10161c, 0.3);
-  width: 320px;
-  margin: 0 auto;
-}
-
-.page-header--cross {
-  background: @blue;
+  margin-top: 259px;
+  margin-bottom: -396px;
 }
 
 .page-header__logo {
-  display: flex;
+  display: block;
   height: 22px;
-  padding: 0;
-  margin: 0;
+  width: 75px;
   padding-top: 22px;
   padding-bottom: 25px;
 }
 
 .page-header__toggle {
+  position: absolute;
+  right: 0;
+  top: 21px;
   width: 50px;
   height: 23px;
   background: url("../img/icon-menu-burger.svg") no-repeat;
   border: 0;
-  padding: 0;
-  margin: 0;
-  margin-top: 21px;
-  margin-bottom: 21px;
 }
 
 .page-header__toggle--cross {
+  position: absolute;
+  right: 0;
+  top: 21px;
   width: 24px;
   height: 23px;
   background: url("../img/icon-menu-cross.svg") no-repeat;
-  padding: 0;
-  margin: 0;
-  margin-top: 22px;
-  margin-bottom: 22px;
 }
 
 @media (min-width: @tablet-width) {
   .page-header {
-    width: 660px;
+    margin-bottom: -619px;
   }
 
   .page-header__logo {
     height: 40px;
     padding-top: 27px;
-    padding-bottom: 43px;
+    padding-bottom: 42px;
   }
 
   .page-header__logo-image {
@@ -55,29 +47,27 @@
   }
 
   .page-header__toggle {
-    margin-top: 44px;
-    margin-bottom: 42px;
+    position: absolute;
+    right: 0;
+    top: 44px;
   }
 
   .page-header__toggle--cross {
-    margin-top: 44px;
-    margin-bottom: 42px;
+    position: absolute;
+    right: 0;
+    top: 45px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .page-header {
-    background: rgba(#10161c, 0.3);
-    display: flex;
-    width: 940px;
-    padding-left: 120px;
-    padding-right: 120px;
+    margin: 0;
+    margin-bottom: -744px;
   }
 
   .page-header__toggle--cross {
     display: none;
   }
-
 
   .page-header__logo {
     height: 40px;
