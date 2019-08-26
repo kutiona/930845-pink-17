@@ -1,32 +1,19 @@
 .main-nav {
-  display: flex;
   background: @blue;
+}
+
+.main-nav__wrapper {
   color: @white;
-  width: 320px;
-  margin: 0 auto;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .main-nav__list {
   margin: 0;
   padding: 0;
   list-style: none;
-  justify-content: flex-start;
-}
-
-.main-nav__wrapper {
-  display: flex;
-  justify-content: flex-start;
-}
-
-@media (min-width: @tablet-width) {
-  .main-nav {
-    width: auto;
-    margin: 0;
-  }
-
-  .main-nav__wrapper {
-    width: 660px;
-  }
+  border-top: 1px solid #000000;
 }
 
 @media (min-width: @desktop-width) {
@@ -35,13 +22,12 @@
   }
 
   .main-nav__wrapper {
-    width: 620px;
-    padding-left: 170px;
-    display: flex;
+    width: 790px;
   }
 
   .main-nav__list {
     justify-content: center;
     align-items: center;
+    border-top: 0;
   }
 }
