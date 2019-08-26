@@ -1,9 +1,10 @@
 .social__list {
+  width: 177px;
   list-style: none;
   padding: 0;
   margin: 0;
-  margin-left: 71px;
-  margin-right: 71px;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   justify-content: space-between;
 }
@@ -16,4 +17,10 @@
   height: 46px;
   border: 3px solid #f2f2f2;
   border-radius: 26px;
+}
+
+@media (min-width: @tablet-width) {
+  .social__list {
+    width: 150px;
+  }
 }
