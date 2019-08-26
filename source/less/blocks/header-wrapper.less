@@ -1,25 +1,25 @@
 .header-wrapper {
-  display: flex;
-  padding: 0;
-  margin: 0 auto;
-  margin-top: 259px;
-  padding-left: 20px;
-  padding-right: 20px;
-  justify-content: space-between;
+  position: relative;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .header-wrapper--cross {
-  margin: 0 auto;
-  border-bottom: 1px solid #000000;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: @tablet-width) {
+  .header-wrapper {
+    width: 620px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .header-wrapper {
-    padding: 0;
+    width: 150px;
     margin: 0;
-  }
-
-  .header-wrapper--cross {
-    border-bottom: 0;
   }
 }
